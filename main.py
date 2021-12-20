@@ -4,6 +4,7 @@ from PowerOf2 import PowerOf2
 from HarmonicNumber import HarmonicNumber
 from Factors import PrimeFactors
 from QuotientAndRemainder import QuotientAndRemainder
+from SwapTwoNumbers import SwapTwoNumbers
 
 '''It contains the basic core programs
     the choices are being stored in the dictionary'''
@@ -13,7 +14,7 @@ class BasicCore:
     def basic(self):
         print("Please Enter Your Choice")
         basic_core_programs = {1: 'Flip Coin', 2: 'Leap Year', 3: 'Power Of 2', 4: 'Harmonic Number',
-                               5: 'Prime Factors', 6: 'Quotient And Remainder'}
+                               5: 'Prime Factors', 6: 'Quotient And Remainder', 7: 'Swap Two Numbers'}
         print(basic_core_programs)
         choice = int(input("Enter Your Choice"))
         if choice == 1:
@@ -28,7 +29,8 @@ class BasicCore:
             PrimeFactors.primefactors("Enter The Number")
         elif choice == 6:
             QuotientAndRemainder.quotient_and_remainder("Enter The Number")
-
+        elif choice == 7:
+            SwapTwoNumbers.swap("Enter The Numbers")
         else:
             print("Wrong Choice")
 
