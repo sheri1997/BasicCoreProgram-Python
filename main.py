@@ -3,6 +3,8 @@ from LeapYear import LeapYear
 from PowerOf2 import PowerOf2
 from HarmonicNumber import HarmonicNumber
 from Factors import PrimeFactors
+from QuotientAndRemainder import QuotientAndRemainder
+
 '''It contains the basic core programs
     the choices are being stored in the dictionary'''
 
@@ -10,7 +12,8 @@ from Factors import PrimeFactors
 class BasicCore:
     def basic(self):
         print("Please Enter Your Choice")
-        basic_core_programs = {1: 'Flip Coin', 2: 'Leap Year',3:'Power Of 2',4:'Harmonic Number',5:'Prime Factors'}
+        basic_core_programs = {1: 'Flip Coin', 2: 'Leap Year', 3: 'Power Of 2', 4: 'Harmonic Number',
+                               5: 'Prime Factors', 6: 'Quotient And Remainder'}
         print(basic_core_programs)
         choice = int(input("Enter Your Choice"))
         if choice == 1:
@@ -23,6 +26,9 @@ class BasicCore:
             HarmonicNumber.harmonic("Enter The Number")
         elif choice == 5:
             PrimeFactors.primefactors("Enter The Number")
+        elif choice == 6:
+            QuotientAndRemainder.quotient_and_remainder("Enter The Number")
+
         else:
             print("Wrong Choice")
 
