@@ -7,6 +7,7 @@ from QuotientAndRemainder import QuotientAndRemainder
 from SwapTwoNumbers import SwapTwoNumbers
 from EvenOdd import EvenOdd
 from VowelOrConsonent import VowelOrConsonent
+from LargestAmong3 import Largest
 '''It contains the basic core programs
     the choices are being stored in the dictionary'''
 
@@ -36,6 +37,8 @@ class BasicCore:
             EvenOdd.even_odd("Enter The Number")
         elif choice == 9:
             VowelOrConsonent.vowel_or_consonent("Enter the Character")
+        elif choice == 10:
+            Largest.largest("Enter The Number")
         else:
             print("Wrong Choice")
 
